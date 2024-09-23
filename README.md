@@ -42,7 +42,7 @@ docker push  killakazzak/custom-nginx:1.0.0
 ```
 ![image](https://github.com/user-attachments/assets/7e1fc314-40c8-424a-aa54-abf4f034add7)
 
-
+https://hub.docker.com/repository/docker/killakazzak/custom-nginx/general
 
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
