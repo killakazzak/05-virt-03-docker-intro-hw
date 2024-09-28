@@ -129,6 +129,28 @@ nano /etc/nginx/conf.d/default.conf
 ```
 ![image](https://github.com/user-attachments/assets/fb653359-e7fa-4b89-b873-c2330403d8d3)
 
+```bash
+nginx -s reload
+```
+![image](https://github.com/user-attachments/assets/941e27a2-1a63-44ab-b107-b6116a913c84)
+
+```bash
+curl http://127.0.0.1:80
+curl http://127.0.0.1:81
+```
+![image](https://github.com/user-attachments/assets/b3a8475b-283a-43c9-bffc-3bbad5abfa6d)
+
+```Ctrl+D```
+![image](https://github.com/user-attachments/assets/9f752577-5b1d-46cd-8939-c90cbb22a21f)
+
+```bash
+ss -tlpn | grep 127.0.0.1:8080``` , ```docker port tenda-nginx-t2```, ```curl http://127.0.0.1:8080
+```
+![image](https://github.com/user-attachments/assets/6889a3d1-22ce-4570-9056-6049c08e7191)
+
+Суть проблемы заключается в том, что изменили порт, на котором Nginx слушает входящие соединения, с 80 на 81, также порт 8080 не будет перенаправляется порт 81 поэтому запросы на 8080 не будут работать.
+
+
 
 
 
