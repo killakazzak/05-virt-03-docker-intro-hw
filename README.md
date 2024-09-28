@@ -88,6 +88,21 @@ date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:
 
 ## Решение Задача 3
 
+```bash
+docker attach tenda-nginx-t2
+```
+Ctrl-C
+
+![image](https://github.com/user-attachments/assets/46365b13-5456-4e36-9363-1176126935b0)
+
+```bash
+docker ps -a
+```
+![image](https://github.com/user-attachments/assets/02f59d39-8e10-450a-a2fc-d2b028cd0624)
+
+Контейнер остановился так как комбинация Ctrl-C, отправляет сигнал прерывания (SIGINT) контейнеру. Это приводит к остановке процесса, который выполняется в контейнере.
+
+
 ## Задача 4
 
 
