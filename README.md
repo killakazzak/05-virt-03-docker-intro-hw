@@ -308,6 +308,28 @@ docker compose up -d
 
 При выполнении команды docker compose up -d будет запущен только файл ```docker-compose.yaml```, если не указать, какой файл использовать. Docker Compose по умолчанию ищет файл ```docker-compose.yaml``` в текущем каталоге. Если необходимо запустить оба файла, вам нужно будет изменить ```docker-compose.yaml```, чтобы включить содержимое ```compose.yaml```.
 
+```bash
+cat > /tmp/netology/docker/task5/docker-compose.yaml <<EOL
+version: "3"
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    network_mode: host
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  registry:
+    image: registry:2
+    network_mode: host
+    ports:
+      - "5000:5000"
+EOL
+```
+
+
+
 ---
 
 ### Правила приема
