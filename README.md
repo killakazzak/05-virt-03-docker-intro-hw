@@ -328,6 +328,11 @@ services:
 EOL
 ```
 
+```bash
+docker compose up -d
+docker ps -a
+```
+![image](https://github.com/user-attachments/assets/3b0775cf-8b7e-4a39-8a20-3d1d7584e6e7)
 
 
 ---
