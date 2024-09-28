@@ -59,6 +59,13 @@ https://hub.docker.com/repository/docker/killakazzak/custom-nginx/general
 
  docker run -d --name  "tenda-nginx-t2" -p 127.0.0.1:8080:80 killakazzak/custom-nginx:1.0.0
 
+ ![image](https://github.com/user-attachments/assets/b96ded49-ba4f-466f-a557-4cd02a2ba32f)
+
+ ![image](https://github.com/user-attachments/assets/94224f04-04f7-452c-b100-78997e72be25)
+
+
+
+
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
 2. Подключитесь к контейнеру и нажмите комбинацию Ctrl-C.
