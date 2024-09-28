@@ -350,6 +350,9 @@ docker images
 
 ![image](https://github.com/user-attachments/assets/e130f387-52c4-49f1-9b70-4dcbd50e9e57)
 
+```bash
+docker compose down
+```
 
 ---
 
