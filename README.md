@@ -59,9 +59,13 @@ https://hub.docker.com/repository/docker/killakazzak/custom-nginx/general
 
  docker run -d --name  "tenda-nginx-t2" -p 127.0.0.1:8080:80 killakazzak/custom-nginx:1.0.0
 
- ![image](https://github.com/user-attachments/assets/b96ded49-ba4f-466f-a557-4cd02a2ba32f)
+![image](https://github.com/user-attachments/assets/bc6b0230-148c-4395-a989-195670c6dd65)
 
- ![image](https://github.com/user-attachments/assets/94224f04-04f7-452c-b100-78997e72be25)
+```bash
+date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs tenda-nginx-t2 -n1 ; docker exec -it tenda-nginx-t2 base64 /usr/share/nginx/html/index.html
+```
+
+![image](https://github.com/user-attachments/assets/aa5745a0-d02a-4670-ad10-7d3158e46828)
 
 
 
