@@ -65,8 +65,7 @@ https://hub.docker.com/repository/docker/killakazzak/custom-nginx/general
 date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs tenda-nginx-t2 -n1 ; docker exec -it tenda-nginx-t2 base64 /usr/share/nginx/html/index.html
 ```
 
-![image](https://github.com/user-attachments/assets/aa5745a0-d02a-4670-ad10-7d3158e46828)
-
+![image](https://github.com/user-attachments/assets/b455ec79-d072-46a5-a864-f08b3e57a32f)
 
 
 
@@ -85,6 +84,9 @@ date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:
 12. Удалите запущенный контейнер "custom-nginx-t2", не останавливая его.(воспользуйтесь --help или google)
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+
+
+## Решение Задача 3
 
 ## Задача 4
 
