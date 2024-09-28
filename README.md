@@ -267,6 +267,48 @@ services:
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод, файл compose.yaml , скриншот portainer c задеплоенным компоузом.
 
+
+
+Решение
+
+```bash
+mkdir -p /tmp/netology/docker/task5
+```
+compose.yaml
+```
+cat > /tmp/netology/docker/task5/compose.yaml <<EOL
+version: "3"
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    network_mode: host
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+EOL
+```
+docker-compose.yaml
+
+```
+cat > /tmp/netology/docker/task5/docker-compose.yaml <<EOL
+version: "3"
+services:
+  registry:
+    image: registry:2
+    network_mode: host
+    ports:
+      - "5000:5000"
+EOL
+```
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/f9965670-a598-46fc-9fef-60b8f98e1e7b)
+
 ---
 
 ### Правила приема
