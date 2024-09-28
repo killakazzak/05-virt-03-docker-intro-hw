@@ -102,6 +102,18 @@ docker ps -a
 
 Контейнер остановился так как комбинация Ctrl-C, отправляет сигнал прерывания (SIGINT) контейнеру. Это приводит к остановке процесса, который выполняется в контейнере.
 
+```bash
+docker start tenda-nginx-t2
+```
+![image](https://github.com/user-attachments/assets/0304324a-4845-45d2-ade6-32edb5b552e0)
+
+```bash
+docker ps -a
+```
+![image](https://github.com/user-attachments/assets/d9a0d9c4-78ec-46ff-a716-81d7ebf70e44)
+
+
+
 
 ## Задача 4
 
