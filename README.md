@@ -157,6 +157,29 @@ vim /var/lib/docker/containers/cad288a4bb8870a431c04af4523288de6b41505d6694239ff
 ```
 ![image](https://github.com/user-attachments/assets/e350c90f-bec3-407e-9549-325d756882db)
 
+```bash
+vim /var/lib/docker/containers/cad288a4bb8870a431c04af4523288de6b41505d6694239ffe7070199a297182/config.v2.json
+```
+![image](https://github.com/user-attachments/assets/6153efdc-f48f-4ea9-9cd1-dba8146153dc)
+
+```bash
+systemctl start docker
+docker start tenda-nginx-t2
+docker ps
+```
+![image](https://github.com/user-attachments/assets/9b03089b-946a-460f-b99c-66685de9fde4)
+
+```bash
+curl http://127.0.0.1:8080
+```
+![image](https://github.com/user-attachments/assets/c927127e-2e76-4064-978f-a3cab20bf7b1)
+
+```bash
+docker rm -f tenda-nginx-t2
+docker ps -a
+```
+![image](https://github.com/user-attachments/assets/f6119aa0-e1b0-412f-9d63-4dbee0041d91)
+
 
 
 ## Задача 4
