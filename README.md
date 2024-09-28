@@ -150,7 +150,12 @@ ss -tlpn | grep 127.0.0.1:8080``` , ```docker port tenda-nginx-t2```, ```curl ht
 
 Суть проблемы заключается в том, что изменили порт, на котором Nginx слушает входящие соединения, с 80 на 81, также порт 8080 не будет перенаправляется порт 81 поэтому запросы на 8080 не будут работать.
 
-
+```bash
+docker stop tenda-nginx-t2
+systemctl stop docker.socket
+vim /var/lib/docker/containers/cad288a4bb8870a431c04af4523288de6b41505d6694239ffe7070199a297182/hostconfig.json
+```
+![image](https://github.com/user-attachments/assets/e350c90f-bec3-407e-9549-325d756882db)
 
 
 
