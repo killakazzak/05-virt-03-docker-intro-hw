@@ -334,6 +334,12 @@ docker ps -a
 ```
 ![image](https://github.com/user-attachments/assets/3b0775cf-8b7e-4a39-8a20-3d1d7584e6e7)
 
+```bash
+docker tag killakazzak/custom-nginx:1.0.0 custom-nginx:latest
+docker images
+```
+![image](https://github.com/user-attachments/assets/50390099-6f61-458b-9d48-0cd93512480c)
+
 
 ---
 
