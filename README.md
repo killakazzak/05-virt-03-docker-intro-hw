@@ -269,7 +269,7 @@ services:
 
 
 
-Решение
+## Решение Задача 5
 
 ```bash
 mkdir -p /tmp/netology/docker/task5
@@ -301,13 +301,12 @@ services:
       - "5000:5000"
 EOL
 ```
-
-
-
-
-
-
+```
+docker compose up -d
+```
 ![image](https://github.com/user-attachments/assets/f9965670-a598-46fc-9fef-60b8f98e1e7b)
+
+При выполнении команды docker compose up -d будет запущен только файл ```docker-compose.yaml```, если не указать, какой файл использовать. Docker Compose по умолчанию ищет файл ```docker-compose.yaml``` в текущем каталоге. Если необходимо запустить оба файла, вам нужно будет изменить ```docker-compose.yaml```, чтобы включить содержимое ```compose.yaml```.
 
 ---
 
