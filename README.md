@@ -341,6 +341,10 @@ docker images
 ![image](https://github.com/user-attachments/assets/50390099-6f61-458b-9d48-0cd93512480c)
 
 
+
+![image](https://github.com/user-attachments/assets/ff0205ae-7e81-4542-b5d9-f65a1d01b500)
+
+
 ---
 
 ### Правила приема
