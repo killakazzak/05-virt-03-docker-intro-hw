@@ -201,6 +201,22 @@ docker run -d --name centos-container -v $(pwd):/data centos tail -f /dev/null
 docker run -d --name debian-container -v $(pwd):/data debian tail -f /dev/null
 ```
 
+![image](https://github.com/user-attachments/assets/8b7ba506-5ec0-4f09-aca7-b745f1295dfe)
+
+```bash
+docker exec -it centos-container bash
+echo "test" > /data/centos-file.txt
+```
+
+```Ctrl+D```
+
+```bash
+echo "test" > host-file.txt
+docker exec -it debian-container bash
+ls -l /data/
+```
+![image](https://github.com/user-attachments/assets/92acb993-0488-4e4b-806e-ed2df817e0d2)
+
 
 ## Задача 5
 
