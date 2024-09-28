@@ -194,6 +194,13 @@ docker ps -a
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+## Решение Задача 4
+
+```bash
+docker run -d --name centos-container -v $(pwd):/data centos tail -f /dev/null
+docker run -d --name debian-container -v $(pwd):/data debian tail -f /dev/null
+```
+
 
 ## Задача 5
 
