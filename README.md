@@ -112,6 +112,23 @@ docker ps -a
 ```
 ![image](https://github.com/user-attachments/assets/d9a0d9c4-78ec-46ff-a716-81d7ebf70e44)
 
+```bash
+docker exec -it tenda-nginx-t2 bash
+```
+![image](https://github.com/user-attachments/assets/93b81250-67cf-4c73-9ea7-29cb651d1192)
+
+```bash
+apt-get update
+apt-get install nano
+```
+![image](https://github.com/user-attachments/assets/889f13e2-a9cf-4df2-ac2d-0c5c21d72e01)
+
+
+```bash
+nano /etc/nginx/conf.d/default.conf
+```
+![image](https://github.com/user-attachments/assets/fb653359-e7fa-4b89-b873-c2330403d8d3)
+
 
 
 
